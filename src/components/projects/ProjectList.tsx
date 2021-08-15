@@ -8,7 +8,7 @@ const ProjectList = () => {
 
     return (
         <div className="project-list section">
-            {projects.map(project => <ProjectSummary project={project}/>)}
+            {projects && projects.map(project => <ProjectSummary project={project}/>)}
         </div>
     )
 }
