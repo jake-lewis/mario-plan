@@ -1,6 +1,6 @@
 import { configureStore, ThunkAction, Action, StateFromReducersMapObject, DeepPartial } from '@reduxjs/toolkit';
-import {authSlice} from '../auth/authSlice';
-import {projectsSlice} from '../projects/projectsSlice';
+import {authSlice} from '../components/auth/authSlice';
+import {projectsSlice} from '../components/projects/projectsSlice';
 
 
 const reducer = {

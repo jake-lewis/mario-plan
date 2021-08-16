@@ -1,5 +1,4 @@
-import { useSelector } from "react-redux";
-import { useAppSelector } from "../app/hooks";
+import { useAppSelector } from "../../app/hooks";
 import { selectAllProjects } from "./projectsSlice";
 import { ProjectSummary } from "./ProjectSummary"
 

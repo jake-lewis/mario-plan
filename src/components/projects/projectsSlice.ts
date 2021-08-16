@@ -1,5 +1,5 @@
 import { createEntityAdapter, createSlice, Selector } from "@reduxjs/toolkit";
-import { RootState } from "../app/store";
+import { RootState } from "../../app/store";
 
 export interface Project {
     id: number,
@@ -13,15 +13,10 @@ const projectsAdapter = createEntityAdapter<Project>({
 })
 
 const initialState = projectsAdapter.getInitialState()
-const filledState = projectsAdapter.upsertMany(initialState, [
-    {id: 1, title: 'Help me find Peach', content: 'blah blah blah', dateCreated: Date.now()},
-    {id: 2, title: 'Collect all the stars', content: 'blah blah blah', dateCreated: Date.now()},
-    {id: 3, title: 'Egg hunt with Yoshi!', content: 'blah blah blah', dateCreated: Date.now()}
-])
 
 export const projectsSlice = createSlice({
     name: 'projects',
-    initialState: filledState,
+    initialState: initialState,
     reducers:{
 
     }
